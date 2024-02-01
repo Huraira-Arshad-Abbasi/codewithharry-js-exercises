@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg , brown, rgb(84, 169, 84));
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #20c28f;
+}
+
+nav {
+    background: #11113f;
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+nav>ul li {
+    list-style: none;
+}
+
+.container {
+    /* background: #00000067;
+    border-radius: 5rem; */
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamecontainer {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    margin: 10px auto;
+    position: relative;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4vw;
+    border: 2px solid #20c28f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.line {
+    background-color: rgb(255, 0, 0);
+    height: 5px;
+    width: 0;
+    position: absolute;
+    transition: width 0.4s ease-in-out;
+}
+
+.box:hover {
+    background-color: rgb(70, 113, 176);
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+.gameinfo {
+    background: #11113fb9;
+    border-radius: 15px;
+    width: 30vw;
+    /* height: 30vh; */
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 1.4vw;
+    font-weight: bolder;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.info>button {
+    position: relative;
+    border: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    background: green;
+    margin: auto;
+}
+.info>button:hover{
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.imgbox img {
+    position: relative;
+    width: 0px;
+    transition: 1s ease;
+}
