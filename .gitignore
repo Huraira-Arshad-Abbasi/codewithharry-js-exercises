@@ -1,0 +1,4 @@
+# Exclude large audio files (too big for GitHub without LFS)
+*.mp3
+*.wav
+*.ogg
