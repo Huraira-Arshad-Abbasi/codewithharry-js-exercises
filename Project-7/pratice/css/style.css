@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBoard{
+    height: 90vmin;
+    width: 90vmin;
+    background: linear-gradient(rgb(131, 131, 105),rgb(253, 183, 183));
+    border: 2px solid brown;
+    display: grid;
+    grid-template-rows: repeat(38,1fr);
+    grid-template-columns: repeat(38,1fr);
+
+}
+.head{
+    background: rgb(255, 0, 0);
+}
+.snake{
+    background: rgb(187, 231, 187);
+
+}
+.food{
+    background: rgb(35, 213, 35);
+
+}
